@@ -4,8 +4,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
-  {path: '/', component: HomepageComponent},
-  {path: '/projects', component: ProjectsComponent}
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomepageComponent},
+  {path: 'projects', component: ProjectsComponent}
 ];
 
 @NgModule({
